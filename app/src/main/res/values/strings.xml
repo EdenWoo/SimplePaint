@@ -9,8 +9,7 @@
     <string name="faq_message">
         <![CDATA[
 
-            Simple paint is a hand drawing application. Chase interview coding challenge.
-            The application works in portrait and landscape. "\n"
+            Simple paint is a hand drawing application. The application works in portrait and landscape. "\n"
             1. You can start drawing right after the application is up and running. "\n"
             2. Delete button deletes the current drawing and starts a new one. "\n"
             3. Once the drawing is completed, it can be saved in camera SD using save icon. "\n"

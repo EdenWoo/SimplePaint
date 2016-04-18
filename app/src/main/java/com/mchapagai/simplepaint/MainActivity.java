@@ -77,6 +77,23 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         return true;
     }
 
+    /*
+     * Override onOptionsItemSelected() method to achieve click events
+     * Handling ActionBar icon click events
+     * Take appropriate action for each action item click
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.faq) {
+            Intent intent = new Intent(this, DirectionActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     @TargetApi(JELLY_BEAN)
     @Override
     public void onClick(View v) {
