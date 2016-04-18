@@ -116,9 +116,9 @@ public class PaintingView extends View implements OnTouchListener {
     }
 
     /*
-    *   Commit the patch to the offscreen
-    *   Make sure we only draw once
-    *   Commit paint object
+    * Commit the patch to the offscreen
+    * Make sure we only draw once
+    * Commit paint object
      */
 
     private void touch_up() {
