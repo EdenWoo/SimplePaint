@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple Paint</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_directions">Directions</string>
+    <string name="directions">Directions</string>
+    <string name="about">About</string>
+
+</resources>
