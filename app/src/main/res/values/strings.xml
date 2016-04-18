@@ -6,4 +6,23 @@
     <string name="directions">Directions</string>
     <string name="about">About</string>
 
+    <string name="faq_message">
+        <![CDATA[
+
+            Simple paint is a hand drawing application. Chase interview coding challenge.
+            The application works in portrait and landscape. "\n"
+            1. You can start drawing right after the application is up and running. "\n"
+            2. Delete button deletes the current drawing and starts a new one. "\n"
+            3. Once the drawing is completed, it can be saved in camera SD using save icon. "\n"
+            4. You can upload the picture from phone and or take picture and paint. "\n"
+            5. Erase the picture as to enhance the drawing. Unfortunately, color picker is not available as
+            of now but is a TODO feature for future update."\n"
+            6. To get started with drawing, initially users do not have to select the brush, but after eraser has been used. "\n"
+
+            Happy Drawing!
+
+        ]]>
+    </string>
+
+
 </resources>

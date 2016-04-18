@@ -53,6 +53,10 @@ public class PaintingView extends View implements OnTouchListener {
         paths.add(new Pair<Path, Paint>(path, newPaint));
     }
 
+    /*
+    * Facilitate drawing on touch
+    * MotionEvent parameter to the onTouch method will let us respond to the particular touch events
+     */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
@@ -111,6 +115,11 @@ public class PaintingView extends View implements OnTouchListener {
         }
     }
 
+    /*
+    *   Commit the patch to the offscreen
+    *   Make sure we only draw once
+    *   Commit paint object
+     */
 
     private void touch_up() {
         path.lineTo(hX, vY);

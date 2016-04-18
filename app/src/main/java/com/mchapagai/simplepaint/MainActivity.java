@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private Button chooseImageButton;
     private ImageButton btnClear, btnSave;
     private PaintingView paintingView;
+
     private static final int SELECT_PHOTO = 100;
 
     /**
@@ -76,13 +77,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         return true;
     }
 
-    /*
-     * Override onOptionsItemSelected() method to achieve click events
-     * Handling ActionBar icon click events
-     * Take appropriate action for each action item click
-     */
-
-
     @TargetApi(JELLY_BEAN)
     @Override
     public void onClick(View v) {
@@ -106,6 +100,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         }
     }
 
+    /*
+     * Method that allows user to save image in the physical device
+     * Permission enabled in ANdroidManifest.xml
+     * <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />}
+     * The saved image will be in .png format and each image have unique name generated
+     * Saves in SD (External Storage)
+     */
     public File saveImage() {
         paintingView.setDrawingCacheEnabled(true);
         Bitmap bitmap = paintingView.getDrawingCache();
